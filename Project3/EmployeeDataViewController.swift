@@ -61,9 +61,6 @@ extension EmployeeDataViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = employeeTableView
             .dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EmployeeTableViewCell
-        
-      
-      
         cell.firstnameLabel?.text = firstname
         cell.empId.text = employeeId
         return cell
